@@ -48,4 +48,17 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
+	/* Image sliding animation */
+	@keyframes slideIn {
+		0% {
+			transform: translateX(100%);
+		}
+		100% {
+			transform: translateX(0);
+		}
+    }
+
+    .slide-in {
+      animation: slideIn 1s ease-out;
+    }
 </style>
